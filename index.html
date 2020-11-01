@@ -9,18 +9,24 @@
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
+
      <div class="container">
-
-        <h1>CHOOSE YOUR DOG</h1>
-
-        <form>
-          <input type="submit" value="choose 1 out 3 dog!">
-        </form>
-        <section class="results hidden">
-          <h2>Check this dog!</h2>
+        <h1>CHOOSE YOUR RANDOM DOG PICTURE</h1>
+           <h2>Enter Number Of Disired Between 1-50</h2>
+        <form> 
+          <input class="enter" type="number" value="3" placeholder="1-50?" required>
+          <button type="submit" class="click" >Click Here!</button>
+          <!--<input type="submit" value="Click Here!" class="click">-->
         
-          <img class="results-img" alt="placeholder">
+        </form>
+        <h2>SEE RESULT BELLOW!</h2>
+
+        <section class="results hidden">
+          <div id="imgView">
+
+          </div> 
           
+        <!--<img class="results-img" alt="placeholder">-->
         </section>
     </div> 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
