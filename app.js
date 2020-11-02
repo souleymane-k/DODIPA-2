@@ -3,8 +3,8 @@
 function getDogImage(number) {
   fetch('https://dog.ceo/api/breeds/image/random/'+ number)
     .then(response => response.json())
-    .then(reponseJson => 
-      displayResults(reponseJson))
+    .then(responseJson => 
+      displayResults(responseJson))
       .catch(error => alert('Something went wrong. Try again later.'));
       
   
@@ -35,7 +35,7 @@ function watchForm() {
     event.preventDefault();
      let numberDogs = $('.enter').val();
      $('.enter').val("");
-    if(numberDogs<=50){
+    if(numberDogs >=1 && numberDogs<=50){
       getDogImage(numberDogs);
     }else{
       alert('Enter Number Between 1-50')
